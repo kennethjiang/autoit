@@ -1,0 +1,10 @@
+name "Openstack Connector",
+depends_on "openstack.account.present"
+
+config do |conf|
+        conf.url :default => #{user.cloud.openstack.url}
+        conf.username :default => #{user.cloud.openstack.username}
+        conf.apikey :default => #{user.cloud.openstack.apikey}
+        conf.tenant :default => #{user.cloud.openstack.tenant} || None, :required => false
+end
+
