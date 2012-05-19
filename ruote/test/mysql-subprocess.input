@@ -1,0 +1,15 @@
+{config: {
+    iaas: {
+        url: http://xxx,
+	user: xxx,
+	key: xxx,
+    }
+}
+{service: {
+    name: mysql_master,
+    image: xxx,
+    flavor: xxx,
+    root_password: xxx,
+    min_instance: 1
+}
+}}
